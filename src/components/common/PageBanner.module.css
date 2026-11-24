@@ -1,0 +1,15 @@
+.banner { position: relative; display: flex; min-height: clamp(260px, 30vw, 380px); align-items: flex-end; overflow: hidden; padding-block: clamp(42px, 5vw, 68px); background: var(--color-navy); color: #fff; }
+.banner::before { position: absolute; inset: 0; background: linear-gradient(90deg, rgb(23 43 59 / 86%) 0%, rgb(23 43 59 / 60%) 60%, rgb(23 43 59 / 28%) 100%), var(--banner-image, none) center 48% / cover; content: ""; }
+.banner > div { position: relative; z-index: 1; }
+.trail { position: relative; margin-bottom: clamp(70px, 9vw, 120px); color: rgb(255 255 255 / 68%); font-size: 0.65rem; letter-spacing: 0.04em; }
+.trail a:hover { color: #fff; }
+.copy { max-width: 1050px; }
+.eyebrow { margin-bottom: 20px; color: rgb(255 255 255 / 72%); font-size: 0.66rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; }
+.copy h1 { max-width: 860px; margin: 0; font-size: clamp(2.4rem, 4vw, 3.8rem); line-height: 1.1; text-wrap: balance; }
+.index { position: absolute; inset-inline-end: var(--gutter); bottom: 30px; color: rgb(255 255 255 / 64%); font-size: 0.58rem; letter-spacing: 0.11em; }
+.index span { padding-inline: 8px; }
+@media (max-width: 600px) {
+  .banner { min-height: 290px; }
+  .trail { margin-bottom: 72px; }
+  .index { inset-inline-end: var(--gutter); bottom: 20px; font-size: 0.5rem; }
+}

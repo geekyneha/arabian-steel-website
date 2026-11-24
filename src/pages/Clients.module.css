@@ -1,0 +1,12 @@
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr); gap: 10%; padding-block: var(--section-space); }
+.intro h2 { max-width: 720px; margin: 0; color: var(--color-blue); font-size: clamp(2rem, 3.2vw, 3rem); }
+.intro .lead { align-self: center; margin: 0; color: #333; }
+.industries { background: #fff; }
+.rows { border-top: 2px solid var(--color-blue); }
+.rows > div { display: grid; min-height: 72px; grid-template-columns: 55px 1fr; align-items: center; border-bottom: 1px solid var(--color-line); }
+.rows > div > span { color: var(--color-blue); font-size: 0.7rem; }
+.rows h3 { margin: 0; color: #28323b; font-size: 1rem; font-weight: 500; }
+.note { margin: 22px 0 0; color: var(--color-muted); font-size: 0.75rem; }
+@media (max-width: 700px) {
+  .intro { grid-template-columns: 1fr; gap: 22px; }
+}

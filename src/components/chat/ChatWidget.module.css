@@ -1,0 +1,15 @@
+.chat { position: fixed; right: 22px; bottom: 22px; z-index: 30; }
+.toggle { border: 1px solid #fff; padding: 14px 20px; background: #080808; color: #fff; font: 600 0.7rem var(--font-body); }
+.toggle:hover { background: #333; }
+.panel { width: min(340px, calc(100vw - 36px)); margin-bottom: 10px; border: 1px solid #ddd; background: #fff; }
+.panel header { border-bottom: 1px solid #333; padding: 14px 16px; background: #151515; color: #fff; font-size: 0.76rem; font-weight: 600; }
+.log { max-height: 260px; overflow: auto; padding: 15px; }
+.log p { margin: 0 0 10px; border: 1px solid #e5e5e5; padding: 10px 12px; color: #444; font-size: 0.73rem; line-height: 1.55; }
+.log p.me { margin-left: 35px; border-color: #151515; background: #151515; color: #fff; }
+.log a { display: inline-block; margin-top: 6px; color: #080808; font-weight: 600; text-decoration: underline; }
+.panel form { display: flex; border-top: 1px solid #e5e5e5; }
+.panel input { min-width: 0; flex: 1; padding: 12px; border: 0; background: transparent; color: #080808; font-size: 0.75rem; }
+.panel form button { border: 0; padding: 0 15px; background: #151515; color: #fff; font-size: 0.7rem; }
+@media (max-width: 480px) {
+  .chat { right: 14px; bottom: 14px; }
+}
